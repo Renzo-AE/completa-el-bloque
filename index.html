@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="contentGame">
+    <div class="interfazGame">
+      <h1>ORDENA LOS BLOQUES</h1>
+      <div class="nivel">
+        <h2>NIVEL</h2>
+        <button class="punto">Principiante</button>
+        <button>Intermedio</button>
+        <button>Avanzado</button>
+        <button>Experto</button>
+      </div>
+      <div class="estilo">
+        <h2>ESTILO</h2>
+        <div class="imagenes">
+          <button class="select" id="1">Números</button>
+          <button id="2"></button>
+          <button id="3"></button>
+          <button id="4"></button>
+        </div>
+      </div>
+
+      <button class="jugar">JUGAR</button>
+    </div>
+    
+    <div class="juego">
+      <h1 class="mensaje">Hola</h1>
+      <div class="blockMove"></div>
+      <div id="root"></div>
+      <div class="options">
+        <div class="time">
+          <p><span class="minutes">6</span> : <span class="seconds">15</span></p>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+              <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="buttonsOptions">
+          <button class="exit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+          </button>
+          <button class="reiniciar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+              <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script type="module" src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</body>
+</html>
